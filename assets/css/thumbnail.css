@@ -5,13 +5,8 @@
 ul.thumbnails
 {
   list-style: none;
-  margin: 5%;
+  margin: 0;
   padding: 0;
-}
-
-.row
-{
-  height: 100%;
 }
 
 .thumbContent
