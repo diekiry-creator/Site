@@ -3,37 +3,64 @@
 .carousel-control-next, .carousel-control-prev
 {
     color: #000000 !important;
-    width: 5% !important;
+    width: 3%!important;
 }
 
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
     color: rgb(255, 0, 0) !important;
 }
 
-ul.thumbnails
-{
+/*.carousel-inner{
+    background-color: rgba(0,0,0,0.2);
+}*/
+
+ul.thumbnails {
+    align-items: center;
     display: flex;
     list-style: none;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 0;
 }
 
-ul.thumbnails h4
-{
-    color: white;
+.col-md-12 {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
 }
-ul.thumbnails img
-{
-    width: 100% !important;
-    margin:0;
-}
-ul.thumbnails p
-{
-    color: #999;
+.col-sm-2 {
+    height: 245px!important;
 }
 
-.thumbnail
-{
+ul.thumbnails a {
+    /*text-decoration: none;*/
+    color: blueviolet;
+}
+
+ul.thumbnails img {
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+    border-radius: 5%;
+    width: 100% !important;
+    height: 100%;
+    margin:0;
+}
+
+.flip-card-discription {
+    top:100%;
+    margin: 5px;
+    height: 30px;
+    width: 80%;
+    position: absolute;
+}
+
+ul.thumbnails h5 {
+    box-sizing: content-box;
+    text-align: center;
+    color: black;
+}
+
+.thumbnail {
     border:0;
     margin:0;
     width:100% !important;
@@ -43,31 +70,28 @@ ul.thumbnails p
     padding: 0px !important;
 }
 
-ul.thumbnails
-{
-    display: flex;
+ul.thumbnails {
     list-style: none;
-    margin: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding: 0;
 }
 
-.row
-{
-    height: 100%;
+.row1 {
+    width: 100%;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-    /*font-family: 'Josefin Sans', sans-serif;*/
     background-color: transparent;
-    height: 320px;
+    height: 100%;
     width: 100% !important;
-    perspective: 1600px; /* Remove this if you don't want the 3D effect */
+    perspective: 1800px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-    position: relative;
+    position: relative!important;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -81,11 +105,13 @@ ul.thumbnails
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back-1, .flip-card-back-2, .flip-card-back-3, .flip-card-back-4 {
-    position: absolute;
+.flip-card-front, .flip-card-back {
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border-radius: 5%;
+    position: absolute;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -94,41 +120,36 @@ ul.thumbnails
     color: black;
 }
 
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
 /* Style the back side */
-.flip-card-back-1 {
-    position: relative;
+.blueviolet {
     background: linear-gradient(to right, rgb(192, 0, 242), rgb(225, 155, 255), rgb(192, 0, 242));
     background-size: 200%;
     color: white;
-    transform: rotateY(180deg);
 }
 
-.flip-card-back-2 {
-    position: relative;
+.red {
     background: linear-gradient(to right, rgb(255, 24, 113), rgb(225, 159, 196), rgb(255, 24, 113));
     background-size: 200%;
     color: white;
-    transform: rotateY(180deg);
 }
 
-.flip-card-back-3 {
-    position: relative;
+.green {
     background: linear-gradient(to right, rgb(0, 200, 60), rgb(140, 255, 169), rgb(0, 245, 60));
     background-size: 200%;
     color: white;
-    transform: rotateY(180deg);
 }
 
-.flip-card-back-4 {
-    position: relative;
+.orange {
     background: linear-gradient(to right, rgb(238, 119, 0), rgb(255, 196, 136), rgb(255, 130, 4));
     background-size: 200%;
     color: white;
-    transform: rotateY(180deg);
 }
 
-.flip-card-back-1 .details
-{
+.flip-card-back .details {
     position: relative;
     top:30%;
     left: 0;
@@ -138,83 +159,12 @@ ul.thumbnails
     box-sizing: border-box;
 }
 
-.flip-card-back-1 .details h2
-{
+.flip-card-back .details h2 {
     font-size: 24px;
     color: #fff;
 }
 
-.flip-card-back-1 .details h2 span
-{
-    font-size: 18px;
-    color: #000000;
-}
-
-.flip-card-back-2 .details
-{
-    position: relative;
-    top:30%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.flip-card-back-2 .details h2
-{
-    font-size: 24px;
-    color: #fff;
-}
-
-.flip-card-back-2 .details h2 span
-{
-    font-size: 18px;
-    color: #000000;
-}
-
-.flip-card-back-3 .details
-{
-    position: relative;
-    top:30%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.flip-card-back-3 .details h2
-{
-    font-size: 24px;
-    color: #fff;
-}
-
-.flip-card-back-3 .details h2 span
-{
-    font-size: 18px;
-    color: #000000;
-}
-
-.flip-card-back-4 .details
-{
-    position: relative;
-    top:30%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.flip-card-back-4 .details h2
-{
-    font-size: 24px;
-    color: #fff;
-}
-
-.flip-card-back-4 .details h2 span
-{
+.flip-card-back .details h2 span {
     font-size: 18px;
     color: #000000;
 }
