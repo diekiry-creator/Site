@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>getthefuckout</title>
-  <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
@@ -17,89 +16,150 @@
   <link rel="stylesheet" href="assets/css/content-block.css">
   <link rel="stylesheet" type="text/css" href="https://db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic">
   <link rel="stylesheet" type="text/css" href="https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="assets/css/main_header.css">
 </head>
 
 <style>
-  .animation a {
+   .link-animation {
     font-family: "Bauhaus 93";
     font-weight: bold;
     font-size: 25px;
     color: black;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-left: 2px;
   }
 
-  .button-icon, .search-line {
-    font-family: "Century Gothic";
+  .button-icon {
+    font-family: "Comfortaa";
     font-weight: bold;
     font-size: 16px;
     color: black;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   .search-line {
-    font-family: "Century Gothic";
+    font-family: "Comfortaa";
     font-weight: normal;
     font-size: 16px;
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
+  .user-name a {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-decoration: none !important;
+    font-style: normal;
+  }
 </style>
 
 <body>
-  <header class="main-header">
+    <header>
 
-    <div class="left-line">
-      <div class="animation">
-        <a class="link-animation" href="#">a</a>
-        <a class="link-animation" href="#">n</a>
-        <a class="link-animation" href="#">i</a>
-        <a class="link-animation" href="#">m</a>
-        <a class="link-animation" href="#">a</a>
-        <a class="link-animation" href="#">t</a>
-        <a class="link-animation" href="#">i</a>
-        <a class="link-animation" href="#">o</a>
-        <a class="link-animation" href="#">n</a>
-        <img src="assets/img/logo-left.svg" alt="gtfo"/>
+    <div id="carousel" class="carousel vert slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <a href="#"><img src="assets/img/header-cover-1.png"></a>
+
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Восхождение героя щита</h5>
+            <div class="link_cat">
+              <a href="#" title="Жанр дзёсэй">дзёсэй</a> /
+              <a href="#" title="Жанр дзёсэй">дзёсэй</a> /
+              <a href="#" title="Жанр дзёсэй">дзёсэй</a>
+            </div>
+            <p>Gambar pemandangan sungai.</p>
+          </div> -->
+
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/img/header-cover-2.jpg"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/img/header-cover-3.jpg"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/img/header-cover-4.png"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/img/header-cover-5.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="left-line">
+        <div class="animation">
+          <div class="link-animation">a</div>
+          <div class="link-animation">n</div>
+          <div class="link-animation">i</div>
+          <div class="link-animation">m</div>
+          <div class="link-animation">a</div>
+          <div class="link-animation">t</div>
+          <div class="link-animation">i</div>
+          <div class="link-animation">o</div>
+          <div class="link-animation">n</div>
+          <img src="assets/img/logo-left.svg" alt="gtfo" />
+        </div>
+
       </div>
 
+      <div class="logo">
+        <a href="#"><img src="assets/img/logo.svg" alt="gtfo" /></a>
+      </div>
+      <nav class="navigation">
+
+        <div class="nav-category">
+          <div class="button-rand">
+            <a href="#" class="button-icon"><i class="fa fa-random" aria-hidden="true"></i></a>
+          </div>
+          <div class="button-category" id="c1">
+            <a href="#" class="button-icon">Мультфильмы</a>
+          </div>
+          <div class="button-category" id="c2">
+            <a href="#" class="button-icon">Аниме</a>
+          </div>
+          <div class="button-category" id="c3">
+            <a href="#" class="button-icon">Сериалы</a>
+          </div>
+        </div>
+        <div class="nav-user">
+          <div class="nav-search">
+            <a href="#" class="button-search"><img src="assets/img/search.svg" alt="gtfo" /></a>
+            <input placeholder="это поиск..." class="search-line"></input>
+          </div>
+          <div class="nav-status">
+            <div class="button-user">
+              <img src="assets/img/shield-2.svg" alt="gtfo">
+              <div class="user-icon fa-layers fa-fw ">
+                <i class="user-icon-static fas fa-circle fa-2x" style="color:black; font-size: 1.9rem"></i>
+                <i class="user-icon-light fas fa-circle fa-lg"></i>
+                <i class="fas fa-user-circle fa-2x" style="font-size: 1.8rem"></i>
+                <i class="user-icon-light far fa-circle fa-lg"></i>
+              </div>
+            </div>
+            <div class="user-name"><a href="#">Гость</a></div>
+          </div>
+        </div>
+      </nav>
     </div>
 
-    <div class="logo">
-      <a href="#"><img src="assets/img/logo.svg" alt="gtfo" /></a>
-    </div>
-    <nav class="navigation">
-
-      <div class="nav-category">
-        <div class="button" id="rand">
-          <a href="#" class="button-background"><img src="assets/img/logo-right.svg" alt="gtfo" /></a>
-          <div href="#" class="button-icon"><img src="assets/img/random.png" alt="gtfo" /></div>
-        </div>
-        <div class="button" id="cat1">
-          <a href="#" class="button-background"><img src="assets/img/sword-orange-2.svg" alt="gtfo" /></a>
-          <div href="#" class="button-icon">мультфильмы</div>
-        </div>
-        <div class="button" id="cat2">
-          <a href="#" class="button-background"><img src="assets/img/sword-orange-2.svg" alt="gtfo" /></a>
-          <div href="#" class="button-icon">аниме</div>
-        </div>
-        <div class="button" id="cat3">
-          <a href="#" class="button-background"><img src="assets/img/sword-orange-2.svg" alt="gtfo" /></a>
-          <div class="button-icon">сериалы</div>
-        </div>
-      </div>
-      <div class="nav-user">
-      <div class="nav-search">
-
-        <a href="#" class="button-search"><img src="assets/img/search.svg" alt="gtfo" /></a>
-        <input type="search" placeholder="найди свое удовольствие..." class="search-line"></input>
-     </div>
-        <a href="#" class="button-user"><img src="assets/img/user.svg" alt="gtfo" /></a>
-      </div>
-    </nav>
   </header>
-
+  
   <div class="content-block">
     <div class="content-info">
       <h2>Я ЗДЕСЬ!
@@ -1667,6 +1727,7 @@
   </footer>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9feb37905a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
