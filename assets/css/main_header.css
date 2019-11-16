@@ -1,3 +1,6 @@
+
+
+/* ------------------------------------------------------------------------------------ */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -6,22 +9,32 @@ body {
   line-height: 1.5;
   text-align: left;
   color: black;
-  background-color: white;
-  background-image: url("../img/background-2.png");
+  background-color: black;
+  /* background-image: url("../img/background-2.png");
   background-size: 600px auto;
   background-repeat: repeat;
-  background-position: top center;
+  background-position: top center; */
+  min-width: 1390px;
+}
+
+body:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0) url("../img/fon.jpg") repeat 0% 0%;
+    z-index: -1;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  min-width: 1230px;
+  min-width: 1390px;
   height: 290px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
-header .carousel {
+#carousel {
   background-color: black;
 }
 
@@ -30,72 +43,67 @@ header .carousel {
 }
 
 .carousel-item img {
-   height: 250px;
-
+  height: 250px;
 }
 
 .carousel-indicators li {
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-
-    background-color: white;
-    opacity: 0.4;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  opacity: 0.4;
 }
 
 .carousel-indicators li:hover {
-    background-color: white;
-    opacity: 0.6;
+  background-color: white;
+  opacity: 0.6;
 }
 
 .carousel-indicators .active, .carousel-indicators .hover {
-    max-width: 12px;
-    margin: 0 3px;
-    height: 12px;
-
-    background-color: white;
-    opacity: 0.7;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+  background-color: white;
+  opacity: 0.7;
 }
 
 /*------------------------------ vertical bootstrap slider------------------------------------*/
-
 .vert .carousel-item-next.carousel-item-left,
 .vert .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .vert .carousel-item-next,
 .vert .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100% 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
 }
 
 .vert .carousel-item-prev,
 .vert .active.carousel-item-left {
--webkit-transform: translate3d(0,-100%, 0);
-        transform: translate3d(0,-100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
 }
 
 /*------------------------------- vertical carousel indicators ------------------------------*/
-.carousel-indicators{
-    position:absolute;
-    top:0;
-    bottom:0;
-    margin:auto;
-    height:20px;
-    right:10px; left:auto;
-    width:auto;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  right: 10px;
+  left: auto;
+  width: auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-
 /* ---------------------------------------------------------------------------------------- */
-
 .main-header {
   position: absolute;
   display: flex;
@@ -105,7 +113,9 @@ header .carousel {
   align-items: center;
   width: 100%;
   min-width: inherit;
-  top: 232px;
+  top: 210px;
+
+  background: linear-gradient(to top, transparent, black 50%, transparent 75%) no-repeat;
 }
 
 .left-line {
@@ -140,8 +150,8 @@ header .carousel {
 .logo {
   position: relative;
   display: flex;
-  height: 78px;
-  width: 78px;
+  height: 80px;
+  width: 80px;
 }
 
 /* .logo::after {
@@ -153,7 +163,6 @@ header .carousel {
   background-color: black;
    background-image: url("../img/logo-black.svg");
 } */
-
 .logo a {
   position: inherit;
   display: inherit;
@@ -172,15 +181,15 @@ header .carousel {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  background: linear-gradient(to left, black 95%, transparent 98%) no-repeat;
+  background: linear-gradient(to left, rgba(0,0,0,0.5) 95%, transparent 98%) no-repeat;
+  /* background-color: rgba(0,0,0,0.5); */
   height: 40px;
 }
 
 .nav-category {
   position: relative;
   display: flex;
-  padding-right: 480px;
+  padding-right: 640px;
 }
 
 .button-rand {
@@ -190,9 +199,9 @@ header .carousel {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image: url("../img/logo-right.svg");
-  z-index: 4;
+  z-index: 10;
   filter: brightness(100%);
   transition-duration: 0.25s;
 }
@@ -228,7 +237,7 @@ header .carousel {
   position: absolute;
   display: flex;
   align-items: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image: url("../img/sword-orange-2.svg");
   margin-left: 30px;
   filter: brightness(100%);
@@ -252,11 +261,12 @@ header .carousel {
   content: "";
 
   height: 100%;
-  width: 80%;
+  width: 100%;
 
-  background: linear-gradient(to right, yellow, transparent);
+   background-size: cover;
+  background-image: url("../img/sword-orange-2.svg");
 
-  opacity: 0.2;
+  opacity: 0;
   transition-duration: 0.5s;
 } */
 .button-category:hover {
@@ -274,17 +284,22 @@ header .carousel {
   transition-duration: 0.5s;
 } */
 #c1 {
-  z-index: 3;
+  z-index: 9;
 }
 
 #c2 {
   left: 160px;
-  z-index: 2;
+  z-index: 8;
 }
 
 #c3 {
   left: 320px;
-  z-index: 1;
+  z-index: 7;
+}
+
+#c4 {
+  left: 480px;
+  z-index: 6;
 }
 
 .nav-user {
@@ -298,6 +313,7 @@ header .carousel {
 .nav-search {
   display: flex;
   align-items: center;
+  min-width: 200px;
   width: 100%;
   height: 80%;
   background-repeat: no-repeat;
@@ -333,65 +349,6 @@ header .carousel {
   transition: 0.5s;
 }
 
-/* .button-user {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 50px;
-}
-
-.button-user img {
-  text-decoration: none;
-  position: relative;
-  height: 100%;
-}
-
-.fa-circle, .fa-user-circle {
-  position: absolute;
-  transition-duration: 0.25s;
-} */
-
-/* .button-user div {
-  cursor: pointer;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.button-user div .user-icon-light {
-  color: green;
-  transition-duration: 0.25s;
-}
-
-.button-user div:hover .user-icon-light {
-  color: #00A20B;
-  transition-duration: 0.25s;
-}
-
-.user-name {
-  display: flex;
-  align-items: center;
-  height: 80%;
-  padding-right: 20px;
-  background-repeat: no-repeat;
-  background-position: center bottom 1px;
-  background-size: 100% 1px;
-  background-image: linear-gradient(to left, green 60%, transparent);
-}
-
-.user-name a {
-  margin-left: 20px;
-  opacity: 0.4;
-  transition-duration: 0.25s;
-}
-
-.user-name a:hover {
-  opacity: 0.7;
-  transition-duration: 0.25s;
-} */
-
 .nav-status {
   position: relative;
   display: flex;
@@ -413,14 +370,13 @@ header .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 50px;
   width: 50px;
 }
 
 .button-user img {
   position: absolute;
-  transition-duration: 0.25;
+  transition-duration: 0.25s;
   height: 100%;
 }
 

@@ -1,0 +1,201 @@
+.content {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: inherit;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 237px;
+  min-width: 237px;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.studio-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.studio-butt {
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio-button {
+  width: 184px;
+  height: 94px;
+  padding: 0.1rem;
+  background: linear-gradient(to right, red, purple);
+}
+
+.studio-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: black;
+}
+
+.studio-name {
+  margin-top: 5px;
+  width: inherit;
+
+  transform: scale(1);
+  transition-duration: 0.25s;
+}
+
+.studio-butt:hover .studio-name {
+  transform: scale(1.1);
+  transition-duration: 0.25s;
+}
+
+.studio-logo .studio-pic {
+  position: relative;
+  width: inherit;
+}
+
+
+.video-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  width: 100% !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5% !important;
+}
+
+.my-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+  min-width: inherit;
+  width: 100% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.row {
+  width: inherit !important;
+  max-width: inherit !important;
+  margin: 0;
+}
+
+.col-sm-3 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 180px;
+  min-width: 180px;
+}
+
+.container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.flip {
+  -webkit-perspective: 800;
+  perspective: 800;
+  position: relative;
+  text-align: center;
+}
+
+.flip:hover .card {
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+}
+
+.flip .card {
+  width: 180px;
+  height: 270px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 !important;
+}
+
+.flip .card .face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.flip .card .front {
+  position: absolute;
+  width: 180px;
+  z-index: 1;
+}
+
+.flip .card .front img {
+  width: 180px;
+  height: 100%;
+}
+
+.flip .card .img {
+  position: relaitve;
+  width: 180px;
+  height: 270px;
+  z-index: 1;
+  border: 2px solid #000;
+}
+
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+  transform: rotatey(-180deg);
+  position: absolute;
+}
+
+.inner {
+  margin: 0px !important;
+  width: 180px;
+}
