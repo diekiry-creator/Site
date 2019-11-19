@@ -66,19 +66,24 @@
     font-style: normal;
   }
 
-  .video-category {
+  .video-category a {
+    width: inherit;
     font-family: "Comfortaa";
     text-align: center;
     word-wrap: break-word;
-    width: 20px;
     font-weight: bold;
     font-size: 17px;
     text-transform: uppercase;
     color: white !important;
     text-decoration: none !important;
-    margin-left: 10px;
-    margin-right: 10px;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, transparent);
+
+    padding-top: 100%;
+    padding-bottom: 100%;
   }
+
 </style>
 
 <body>
@@ -236,7 +241,9 @@
         </div>
       </div>
       <div class="video-content">
-        <a class="video-category" href="#">Мультфильмы</a>
+        <div  class="video-category">
+           <a href="#">Мультфильмы</a>
+        </div>
         <div id="carousel-card-1" class="carousel-card carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -441,7 +448,9 @@
         </div>
       </div>
       <div class="video-content">
-        <a class="video-category" href="#">Аниме</a>
+        <div  class="video-category">
+           <a href="#">Аниме</a>
+        </div>
         <div id="carousel-card-2" class="carousel-card carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -646,7 +655,9 @@
         </div>
       </div>
       <div class="video-content">
-        <a class="video-category" href="#">Сериалы</a>
+        <div  class="video-category">
+           <a href="#">Сериалы</a>
+        </div>
         <div id="carousel-card-3" class="carousel-card carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -851,7 +862,9 @@
         </div>
       </div>
       <div class="video-content">
-        <a class="video-category" href="#">Фильмы</a>
+        <div  class="video-category">
+           <a href="#">Фильмы</a>
+        </div>
         <div id="carousel-card-4" class="carousel-card carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
