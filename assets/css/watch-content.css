@@ -97,7 +97,7 @@ video {
 }
 
 .infoepmain {
-    width: 90px;
+    width: 80px;
     height: 80px;
     background-color: #333333;
     float: left;
@@ -109,7 +109,7 @@ video {
     background-color: black;
     background-repeat: no-repeat;
     background-size: 79px 79px;
-    width: 89px;
+    width: 79px;
     height: 79px;
     float: left;
     margin-right: 0px;
@@ -118,7 +118,7 @@ video {
 
 .infoept {
     background-color: black;
-    width: 89px;
+    width: 79px;
     height: 79px;
 }
 
