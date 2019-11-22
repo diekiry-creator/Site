@@ -17,10 +17,6 @@ hr {
     background-image: linear-gradient(to left, transparent, red 5%, red 95%, transparent);
 }
 
-h1 {
-  font-size: 20px;
-}
-
 video {
   width: inherit;
 }

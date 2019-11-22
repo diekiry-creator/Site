@@ -12,6 +12,10 @@
   left:0;
 }
 
+h1 {
+  font-size: 20px;
+}
+
 .form-wrapper {
   display: none;
   z-index:9999;
