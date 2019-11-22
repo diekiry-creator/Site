@@ -5,6 +5,12 @@
   min-width: inherit;
 }
 
+.row {
+    width: inherit !important;
+    max-width: inherit !important;
+    margin: 0;
+}
+
 hr {
     border: 0;
     height: 2px;
